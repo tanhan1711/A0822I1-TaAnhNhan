@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tao Form</title>
+    <style>
+     body{
+         background-color: white;
+         width: 450px;
+         border: 20px solid aqua;
+         padding-top: -10px;
+     }
+     .tittle {
+         color: blue;
+         margin: 10px 0 0 0;
+     }
+     .checkbox {
+         color: orange;
+     }
+    </style>
+</head>
+<body>
+<h1 style="background-color:orange;color: white;text-align: center">Sở thích của bạn</h1>
+
+<form>
+
+    <span class="tittle" style="margin-left: 6px">Họ và tên</span>  <input  type ="text"  name="uname"><br><br>
+    <span class="tittle" style="margin-left: 30px">Email</span>       <input type ="text"  name="email"><br>
+    <span class="tittle" style="margin-left: 10px">Sở thích</span> <input type="checkbox" name="hoppy"
+                                                                          value="the_thao"> <span
+        class="checkbox">Thể thao</span>
+    <input type="checkbox" name="hoppy" value="am_nhac" style="margin-left: 6px"> <span
+        class="checkbox">Âm nhạc</span>
+    <input type="checkbox" name="hoppy" value="doc_sach" style="margin-left: 30px"> <span
+        class="checkbox">Đọc sách</span><br>
+    <input type="checkbox" name="hoppy" value="luot_web" style="margin-left: 81px"> <span
+        class="checkbox">Lướt web</span>
+    <input type="checkbox" name="hoppy" value="choi_game"> <span class="checkbox">Chơi game</span>
+    <input type="checkbox" name="hoppy" value="dien_anh"> <span class="checkbox">Điện ảnh</span><br>
+    <input type="checkbox" name="hoppy" value="du_lich" style="margin-left: 81px"> <span
+        class="checkbox">Du lịch</span><br>
+    <button type="submit">Gửi thông tin</button>
+    <button type="reset">Nhập lại</button>
+</form>
+
+</body>
+</html>
