@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien te</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="Nhapvao"></td>
+            <td><select name="" id="doi1">
+                <option value="0">VND</option>
+                <option value="1">USD</option>
+            </select></td>
+            <td><select name="" id="doi2">
+                <option value="0">VND</option>
+                <option value="1">USD</option>
+            </select></td>
+            <td><button onclick="chuyendoi()">Chuyển đổi</button></td>
+
+        </tr>
+
+
+<!--    <select name="" id="doi1">-->
+<!--        <option value="0">VND</option>-->
+<!--        <option value="1">USD</option>-->
+<!--    </select>-->
+<!--    <p>To Currency</p>-->
+<!--    <select name="" id="doi2">-->
+<!--        <option value="0">VND</option>-->
+<!--        <option value="1">USD</option> <-->
+<!--    </select><br>-->
+<!--    <button onclick="chuyendoi()">Chuyen doi</button>-->
+
+    <script>
+        function chuyendoi() {
+
+          let giatridoi = document.getElementById('Nhapvao').value;
+            let doi1 = document.getElementById('doi1').value;
+            let doi2 = document.getElementById('doi2').value;
+            if (doi1==doi2){
+                document.write('Số tiền đổi được là:'+giatridoi)
+            }
+            if (doi1=="0" && (doi2=="1")){
+                document.write(('Số tiền đổi được là:'+giatridoi/22000))
+            }
+
+        }
+    </script>
+    </table>
+</form>
+</body>
+</html>

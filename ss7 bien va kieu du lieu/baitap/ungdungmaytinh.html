@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ungdungmaytinh</title>
+</head>
+<body>
+<form>
+<input type="text" name="" id="so1 ">
+    <input type="text" name="" id="so2 "><br>
+    <button type="button" style="width: 100px" id="cong" onclick="Addition()">Cong</button>
+<button type="button" style="width: 100px" id="tru" onclick="Subtraction()">Tru</button>
+<button type="button" style="width: 100px"id="nhan" onclick="Multiplication()">Nhan</button>
+<button type="button" style="width: 100px"id="chia" onclick="Division()">Chia</button>
+    <p id="KetQua"> </p>
+</form>
+<script>
+function Addition() {
+    let giatrivao1 = +document.getElementById("so1 ").value;
+    let giatrivao2 = +document.getElementById("so2 ").value;
+      cong = (giatrivao1+giatrivao2);
+    document.getElementById("KetQua").innerText = "Result Addition: " + cong;
+}
+function Subtraction() {
+    let giatrivao1 = +document.getElementById("so1 ").value;
+    let giatrivao2 = +document.getElementById("so2 ").value;
+    tru = (giatrivao1-giatrivao2);
+    document.getElementById("KetQua").innerText = "Result Subtraction: " + tru;
+}
+function Multiplication() {
+    let giatrivao1 = +document.getElementById("so1 ").value;
+    let giatrivao2 = +document.getElementById("so2 ").value;
+    nhan = (giatrivao1 * giatrivao2);
+    document.getElementById("KetQua").innerText = "Result Multiplication:" + nhan;
+}
+function Division() {
+    let giatrivao1 = +document.getElementById("so1 ").value;
+    let giatrivao2 = +document.getElementById("so2 ").value;
+    chia = (giatrivao1 / giatrivao2);
+    document.getElementById("KetQua").innerText = "Result Division:" + chia;
+}
+
+
+</script>
+</body>
+</html>
