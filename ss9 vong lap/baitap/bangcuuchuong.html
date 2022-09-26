@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bangcuuchuong</title>
+</head>
+<body>
+<h1> Bảng Cửu Chương</h1>
+<p id="ketQua"></p>
+<script>
+    let data = '<table border="1">';
+    for (let i = 1; i < 10;i++) {
+        data += '<tr>';
+        for (let j = 1; j < 10; j++) {
+            data += ' <td style="width: 40px;height: 20px">'+ j + 'x' + i + "=" + (i*j)+' </td>';
+        }
+        data += '</tr>';
+    }
+    data += '</table>';
+    document.getElementById("ketQua").innerHTML = data;
+</script>
+</body>
+</html>
