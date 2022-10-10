@@ -6,15 +6,15 @@
 </head>
 <body>
 <script>
-    let string = "ta";
+    let string = prompt("nhap chuoi bat ky:");
     let count = 0;
     for(let i =0;i<string.length;i++) {
-        if (string[i] == "") {
+        if (string[i] === ' ') {
             count++;
         }
-        count +=count;
-    }  document.write(""+count)
-
+    }
+    count += 1;
+    document.write(count);
     </script>
 </body>
 </html>

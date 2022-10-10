@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số mảng của phần tử");
+    let Array = [];
+    for (let i = 0; i < n; i++){
+        Array[i] = prompt("Nhập phần tử thứ " + i + " của mảng");
+    }
+    document.write("Mảng vừa nhập là: " +Array +"<br>");
+    for (let i = 0; i < Array.length; i++) {
+        if (Array[i] === "-"){
+            Array[i] = "_";
+        }
+    }
+    document.write("Mảng sau khi được thay thế là:" +Array);
+</script>
+</body>
+</html>
