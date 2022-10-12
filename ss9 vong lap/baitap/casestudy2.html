@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let h = +prompt("nhap vao chieu cao");
+    for (i=1;i<=h;i++){
+        for (j=1;j<=i;j++){
+            if (j == 1 || j ==   i || i == h){
+                document.write("* ");}
+            else{
+                document.write(" &nbsp ");}
+        }
+        document.write("<br>")
+        }
+</script>
 </body>
 </html>

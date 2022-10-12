@@ -6,24 +6,17 @@
 </head>
 <body>
 <form>
-    <input type="text" id="tiengviet" onkeyup="translate()">
-    <div id ="result "></div>
     <script>
+        let word = prompt("nhap vao mot chu bat ky:");
         let tiengviet = ["meo","cho","chim","khi"];
         let english  =["cat","dog","bird","monkey"];
-        function translate () {
-            let index =-1;
-            let myWord = document.getElementById("tiengviet").value;
-            for (let i = 0; i < tiengviet.length; i++) {
-                if (myWord == tiengviet[i]) {
-                    index=i;
-                    document.getElementById("result").innerText = english[index];
-                }
-            }
-            if (index == -1){
-                document.getElementById("result").innerText = " Không tìm ra"
+        for (let i = 0; i <tiengviet.length ; i++) {
+            if(word==tiengviet[i]){
+                document.write(""+english[i])
             }
         }
+
+
     </script>
 </form>
 </body>

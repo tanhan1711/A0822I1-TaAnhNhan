@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>bai1</title>
 </head>
 <body>
-$END$
+<script>
+    let n =+prompt("nhap vao chieu dai");
+    let m =+prompt("nhap vao chieu rong");
+    for (let i = 1; i <= n; i++){
+        for (let j = 1; j <= m; j++){
+            if (i == 1 || i == n){
+                document.write("*" +"&nbsp" );
+            }else if (j == 1|| j == m){
+                document.write("*" + "&nbsp");
+            }else {
+                document.write("&nbsp" + "&nbsp" + "&nbsp");
+            }
+        }
+        document.write("<br>")
+    }
+
+
+</script>
 </body>
 </html>

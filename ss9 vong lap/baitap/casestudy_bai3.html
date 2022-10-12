@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let h = +prompt("nhap vao chieu cao h");
+     let m ;
+     let n ;
+
+    for ( i = 1; i <= h; i++)
+    {
+        for ( j = 1; j <= 2 * h - 1; j++)
+        {
+            if (j >= m && j <= n){
+                printf("*");}
+            else{
+                printf(" ");
+        }
+        m--;
+        n++;
+        printf("\n");
+    }
+    }
+</script>
 </body>
 </html>
