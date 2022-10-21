@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+class Temperature {
+    constructor(temp) {
+        this.temp = temp;
+    };
+    CsangF(C){
+        return ((this.temp * 9/5)+32);
+    }
+    CsangKenvin(C){
+        return (this.temp+273.15);
+    }
+}
+let Trade = new Temperature(25);
+alert(Trade.CsangF())
+alert(Trade.CsangKenvin())
+</script>
+</body>
+</html>

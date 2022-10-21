@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quanlysanpham</title>
+</head>
+<body>
+<html>
+<h2 style="align-content: center"> Quản lý sản phẩm</h2>
+<p> id="ketQua"></p>
+<form>
+    <input type="text" id="add" name="New Product">
+    <button type="button" onclick="add()">Add</button>
+</form>
+<script>
+    let data1 = '<table border="1">';
+    for (let i = 1; i < 9;i++) {
+        data1 += '<tr>';
+        for (let j = 1; j < 3; j++) {
+            data1 += ' <td style="width: 40px;height: 20px"></td>';
+        }
+        data1 += '</tr>';
+    }
+    data1 += '</table>';
+    document.getElementById("ketQua").innerHTML = data;
+</script>
+</html>
+</body>
+</html>

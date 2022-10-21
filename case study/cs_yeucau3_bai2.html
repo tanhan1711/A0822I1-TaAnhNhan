@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let A=[7,2,5,3,5,3];
+    let B=[7,2,5,4,6,3,5,3];
+    function missingValue(A1, B1) {
+        for (let i = 0; i < B1.length; i++) {
+            let flag = true;
+            for (let j = 0; j < A1.length; j++) {
+                if (A1[j] == B1[i]) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag==true){
+                document.write("so khac biet la"+B1[i])
+            }
+        }
+        }
+        missingValue(A,B);
+
+
+
+
+</script>
+</body>
+</html>

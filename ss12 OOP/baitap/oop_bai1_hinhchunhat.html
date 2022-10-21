@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class  Rectangle {
+        constructor(chieudai,chieurong) {
+            this.chieudai= chieudai;
+            this.chieurong= chieurong;
+        };
+        getChieudai(){
+            return this.chieudai;
+        }
+        getChieurong(){
+            return this.chieurong;
+        }
+        Chuvi(chuvi){
+            return ((this.chieudai+this.chieurong) * 2)
+        }
+        Dientich(dientich){
+            return (this.chieudai*this.chieurong)
+        }
+    }
+    let hinhchunhat = new Rectangle(5,4);
+    alert(hinhchunhat.Chuvi())
+    alert(hinhchunhat.Dientich())
+</script>
+</body>
+</html>
