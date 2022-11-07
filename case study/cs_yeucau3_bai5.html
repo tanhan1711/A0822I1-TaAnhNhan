@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Menu đồ uống</title>
+</head>
+<body>
+<div id="menu"></div>
+<span>
+        <input type="text" id="order" placeholder="1-6 to order | 7 to end of order">
+        <input type="button" id="order1" value="Order" onclick="order()">
+    </span>
+<div id="bill"></div>
+<script>
+    let menuDrink = ['Cafe', 'Cam vắt', 'Nước ép cà rốt',
+        'Nước ép cà chua', 'Nước lọc', 'Nước dừa'];
+    let orderList = [];
+    let orderAmount = [];
+    let menu = '<table border="1">\n' +
+        '           <tr>' +
+        '              <th>ID</th>\n' +
+        '              <th>Drink</th>\n' +
+        '          </tr>\n';
+    for (let i = 0; i < menuDrink.length; i++) {
+        menu += '<tr>' +
+            '       <th>' + (i + 1) + '</th>\n' +
+            '       <th>' + menuDrink[i] + '</th>\n' +
+            '   </tr>\n';
+    }
+    menu += '</table>';
+    document.getElementById("menu").innerHTML = menu;
+    function order() {
+        let order_item_index = document.getElementById("order").value - 1;
+        if (order_item_index < 0) {
+            document.getElementById("order").value = '';
+            alert("Please enter 1-6 to order | 7 to end of order!");
+        } else if (order_item_index > 5) {
+            alert("End order!");
+            document.getElementById("order").value = '';
+        } else {
+            let order_item_amount = +prompt("Enter the amount of " + menuDrink[order_item_index], 1);
+            orderList.push(menuDrink[order_item_index]);
+            orderAmount.push(order_item_amount);
+            document.getElementById("order").value = '';
+        }
+        showBill();
+    }
+    function showBill() {
+        let data = '<table border="1">\n' +
+            '           <tr>' +
+            '              <th>ID</th>\n' +
+            '              <th>Drink</th>\n' +
+            '              <th>Amount</th>\n' +
+            '          </tr>\n';
+        for (let i = 0; i < orderList.length; i++) {
+            data += '<tr>' +
+                '       <th>' + (i + 1) + '</th>\n' +
+                '       <th>' + orderList[i] + '</th>\n' +
+                '       <th>' + orderAmount[i] + '</th>\n' +
+                '   </tr>\n';
+        }
+        data += '</table>';
+        document.getElementById("bill").innerHTML = data;
+    }
+</script>
+</body>
+</html>

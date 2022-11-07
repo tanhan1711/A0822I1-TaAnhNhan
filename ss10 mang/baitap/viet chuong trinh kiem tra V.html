@@ -6,7 +6,12 @@
 </head>
 <body>
 <script>
-    let Array = [-10, 3, -26, -71, 100, 2, 4, 6, 7, 20];
+      // let Array = [-10, 3, -26, -71, 100, 2, 4, 6, 7, 20];
+    let a = +prompt("nhap vao so phan tu cua mang");
+    Array=[];
+    for (let i = 0; i <a ; i++) {
+        Array[i] = +prompt("nhap so phan tu thu:" + i);
+    }
     let V = +prompt("nhap vao gia tri bat ki");
     let check = false;
     for (let i = 0; i < Array.length; i++) {

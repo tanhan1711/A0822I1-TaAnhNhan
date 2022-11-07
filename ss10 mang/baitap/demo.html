@@ -6,10 +6,26 @@
 </head>
 <body>
 <script>
-    let x = [1,3,5,7];
-    let y = [2,4,6];
-    x[2] = y[x.length-3] + x [ x[0] + y[0] ];
-    console.log(x);
+    let a = +prompt("nhập vào số phần tử của mảng:");
+    array = [];
+    for (let i = 0; i < a; i++) {
+        array[i] = +prompt("nhập số phần tử thứ :" + i);
+    }
+    let flag = false;
+    let n = array[1]-array[0];
+    for (let i = 0; i < array.length-1; i++) {
+        if (array[i + 1] - array[i]==n) {
+            flag = true;
+        }else {
+            flag = false;
+            break;
+        }
+    }
+    if (flag) {
+        document.write("OK");
+    } else {
+        document.write("NO");
+    }
 </script>
 </body>
 </html>

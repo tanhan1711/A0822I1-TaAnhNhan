@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let random = prompt("nhap vao mot chu bat ky:");
+    let so = [1,2,3,4];
+    let chu = ['mot','hai','ba','bon'];
+    let A =[]
+    let str = '';
+
+    for (let i = 0; i <random.length; i++) {
+        A.push(random.charAt(i)) // tach tung ki tu thanh mot unit trong arr va them vao mang A
+    }
+    for (let i = 0; i <A.length ; i++) {
+        for (let j = 0; j <so.length; j++) {
+
+        if (A[i]==so[j]){
+            str += chu[j] +" ";
+        }
+    }
+    }
+    document.write(str)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        constructor(weight) {
+        this.weight = 10;
+        }
+        setWeight(weight){
+            this.weight = weight;
+        }
+        getWeight(){
+            return this.weight;
+        }
+        isEmpty(){
+            if (this.weight==0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        decrease(){
+            this.weight = this.weight-1;
+        }
+    }
+    class Human{
+        constructor(name,gender,weight) {
+        this.mame=name;
+        this.gender=gender;
+        this.weight=weight;
+        }
+        isMale(name){
+            if (this.mame==Adam){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        setGender(){
+            this.gender=gender;
+        }
+        checkApple(){
+            if (apple.weight==0){
+                return true;
+            }else
+                return false;
+        }
+        eatApple(apple){
+            if (apple.weight>0){
+                this.say("con tao");
+                apple.weight = apple.weight-1;
+                this.weight += 1;
+            }else {
+                this.say("het tao");
+            }
+        }
+        say(text){
+            console.log("An")
+        }
+        getName(){
+            return this.name;
+        }
+        setName(name){
+            this.name=name;
+        }
+        getWeight(){
+            return this.weight;
+        }
+        setWeight(weight){
+            this.weight = weight;
+        }
+    }
+    let adam = new Human("Adam",true,50);
+    let eva  = new Human("Eva",false,20);
+    let apple1= new Apple();
+
+    for (let i = 0; i <10 ; i++) {
+        adam.eatApple(apple1);
+        eva.eatApple(apple1);
+    }
+    console.log(adam.weight);
+    console.log(apple1.weight);
+    console.log(eva.weight);
+
+
+</script>
+</body>
+</html>

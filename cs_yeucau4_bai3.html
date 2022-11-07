@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào cạnh thứ 1:");
+    let b = +prompt("Nhập vào cạnh thứ 2:");
+    let c = +prompt("Nhập vào cạnh thứ 3:");
+
+    function checkTriangle(x, y, z) {
+        if ((x + y > z) && (x + z > y) && (y + z) > x) {
+            document.write("đây là 3 cạnh của tam giác:");
+            if (x == Math.sqrt((y * y) + (z * z)) || y == Math.sqrt((x * x) + (z * z)) || z == Math.sqrt((y * y) + (x * x))) {
+                return document.write(" day la 3 canh cua tam giac vuong");
+            }
+
+        } else {
+            return document.write("day ko phai la 3 canh cua tam giac");
+        }
+    }
+
+    checkTriangle(a, b, c);
+</script>
+</body>
+</html>

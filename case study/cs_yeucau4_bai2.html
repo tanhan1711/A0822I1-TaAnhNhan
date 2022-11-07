@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = "cabac";
+    function differentSymbolsNaive(s1) {
+        let a = [];
+        let count;
+        for (let i = 0; i < s1.length; i++) {
+            if (s1[i] !== s1[i + 1]) {
+                a.push(s1[i]);
+            }
+            for (let j = 0; j < a.length; j++) {
+                if (a[j] == s1[i]) {
+                    a.splice(i, 1);
+                    count++;
+                }
+            }
+        }
+        return document.write(count);
+    }
+    differentSymbolsNaive(str)
+
+</script>
+</body>
+</html>
