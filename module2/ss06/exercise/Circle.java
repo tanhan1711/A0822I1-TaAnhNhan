@@ -1,8 +1,10 @@
 package ss06.exercise;
 
+import ss07.exercise.bai1.IResizeable;
+
 import java.awt.geom.Area;
 
-public class Circle {
+    public class Circle  {
     public double radius;
     public String color;
     public double area;
