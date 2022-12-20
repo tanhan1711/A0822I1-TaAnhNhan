@@ -8,17 +8,17 @@ public class InsertionSort {
         for (int i = 0; i < arr.length ; i++) {
              x=arr[i];
              pos =i;
-             while (0<pos && x <arr[pos-1]){
+            int flag = arr[i];
+             while (0<pos && flag <arr[pos-1]){
                  arr[pos]=arr[pos-1];
                  pos--;
-                 System.out.println("Vong lap while da chay");
              }
-             arr[pos] = x;
+             arr[pos] = flag;
             System.out.println("lan thu "+i+":"+ Arrays.toString(arr));
         }
     }
     public static void main(String[] args) {
-        int[] numbers = {17, 11, 10, 2, 66, 13};
+        int[] numbers = {16, 13,50, 43, 58, 2};
         insertiongSort(numbers);
     }
 }
